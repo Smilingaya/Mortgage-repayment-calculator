@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+   <link rel="stylesheet" href="./style.css">
+  <title>Frontend Mentor | Mortgage repayment calculator</title>
+</head>
+<body>
+
+<main class="container">
+  <section class="Mortgage-calculator">
+     <div class="head">
+      <h2> Mortgage Calculator</h2>
+      <a href="#" id="Clear">Clear All</a>
+     </div>
+     <form>
+      <div class="Mortgage-Amount">
+        <label for="Amount" class="Amountl"> Mortgage Amount</label>
+          <button>£ </button><input type="text" id="Amount">
+        
+      </div>
+      <div class="term-rate">
+        <div class="d1">
+          <label for="term" class="terml" >Mortgage Term</label>
+          <input type="text" id="term">  <button>years</button>
+        </div>
+       <div class="d1">
+        <label for="Rate" class="ratel" > Interest Rate</label>
+        <input type="text" id="Rate"><button>%</button>
+       </div>
+      </div>
+      <div class="mor-type">
+      <label for=" type">Mortgage Type</label>
+      <div class="Mortgage-Type t1">
+        <input type="radio" id="repayment">
+        <label for="type"> Repayment </label>
+      </div>
+      <div class="Mortgage-Type t2">
+        <input type="radio" id="Interest">
+        <label for="type">    Interest Only </label>
+      </div>
+
+      <div class="btn">
+        <img src="./assets/images/icon-calculator.svg" >
+        <input type="submit" class="btn-submit" value=" Calculate Repayments">
+      </div>  
+      </div>
+    </form>
+  </section>
+    
+      
+  <section class="result-calculator1">
+     <img src="./assets/images/illustration-empty.svg">
+     <h1> Results shown here</h1>
+     <p> Complete the form and click “calculate repayments” to see what 
+      your monthly repayments would be.</p>
+  </section>
+  <section class="result-calculator2">
+     <h2>Your results</h2>
+     <p>Your results are shown below based on the information you provided. 
+      To adjust the results, edit the form and click “calculate repayments” again.</p>
+
+      <div class="resault">
+        <h5>Your monthly repayments</h5>
+        <h1 id="res"></h1>
+        <hr>
+      <h5>Total you'll repay over the term</h5>
+      <h3 id="res1"></h3>
+      </div>
+  </section>
+</main>
+
+
+<!--
+  
+
+  
+
+  
+
+  
+
+  
+  -->
+  <script src="script.js"></script>
+</body>
+</html>
